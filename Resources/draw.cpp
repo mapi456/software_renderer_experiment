@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <algorithm>
 
-void draw_triangle(Triangle_3D* triangle, Uint32 pixels[], int width, int height, SDL_Surface *screen) {
+void draw_triangle(Triangle_3D* triangle, int width, int height, SDL_Surface *screen) {
 	Vector4* v1 = triangle->vertex1;
 	Vector4* v2 = triangle->vertex2;
 	Vector4* v3 = triangle->vertex3;

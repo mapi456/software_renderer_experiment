@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Downloads\01_hello_SDL\01_hello_SDL\01_hello_SDL.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Resources\draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resources\geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\01_hello_SDL\01_hello_SDL\rasterize.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

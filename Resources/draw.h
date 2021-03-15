@@ -14,10 +14,12 @@
 void fill_surface(SDL_Surface* surface, Uint32 pixels[], int width, int height);
 
 
-// This method fills the pixel array with data corresponding to the pixels within the projected triangle
+// This method draws all pixels that lie within the projected triangle.
 // Note: we only need width and height because we skipped the clipping stage. Otherwise, all pixels are guaranteed
 //       to lie within viewing space.
-void draw_triangle(Triangle_3D* triangle, Uint32 pixels[], int width, int height, SDL_Surface *screen);
+void draw_triangle(Triangle_3D* triangle, int width, int height, SDL_Surface *screen);
 //				  (Triangle_3D* triangle, Uint32 pixels[], int width, int height, const SDL_PixelFormat format)
 
+// This method taken from external source at http://sdl.beuc.net/sdl.wiki/Pixel_Access. 
+// Draws to a single pixel.
 void putpixel(SDL_Surface* surface, int x, int y, Uint32 pixel);

@@ -3,7 +3,7 @@
 #include <SDL.h>
 #include <stdio.h>
 
-// This module includes vector/matrix multiplcation math, structures for matrices and vectors
+// This module includes vector/matrix multiplcation math, structures for matrices, vectors, triangles
 
 // A Vector4 represents a 4x1 column vector -> 4 rows by 1 column.
 // Often used as 3x1 with w = 1 in order to represent points in cartesian space
@@ -108,6 +108,8 @@ struct Triangle_3D {
 		delete vertex3;
 	}
 
+	// This function copies all information in this triangle into the vertices of out.
+	// Note: modifies out
 	void copy(Triangle_3D* out) {
 		out->vertex1->x = vertex1->x;
 		out->vertex2->x = vertex2->x;
@@ -124,11 +126,13 @@ struct Triangle_3D {
 	}
 };
 
-// edge_function computes the signed area of the triangel v1v2p
+// edge_function computes the signed area of the triangle v1v2p
 float edge_function(Vector4 *v1, Vector4 *v2, Vector4 *p);
 
+// edge_function computes the signed area of the triangle v1v2p
 float edge_function(Vector4* v1, Vector4* v2, float x, float y);
 
+// edge_function computes the signed area of the triangle v1v2p
 float edge_function(Vector4* v1, Vector4* v2, int x, int y);
 
 
