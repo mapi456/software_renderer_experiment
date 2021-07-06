@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <algorithm>
 
+//TESTING GITHUB FEATURES
+
 void draw_triangle(Triangle_3D* triangle, int width, int height, SDL_Surface *screen) {
 	Vector4* v1 = triangle->vertex1;
 	Vector4* v2 = triangle->vertex2;
